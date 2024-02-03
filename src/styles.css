@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+.main-container {
+    padding: 20px 15px 20px 15px;
+
+}
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-list{
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    flex-direction: row;
+    gap: 10px;
+}
+.startbtn {
+    padding: 12px;
+    background-color: rgb(241, 126, 18);
+    border: 0px none;
+    font-weight: 700;
+    box-shadow: 10px;
+}
+.hamburger {
+    border: none;
+    width: auto;
+    height: auto;
+    background-color: none;
+    cursor: pointer;
+}
+.new-list{
+    list-style-type: none;
+    font-family:Helvetica;
+    font-size: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.list{
+    padding: 5px 5px 5px 5px;
+}
+.btnlist {
+    background-color: orange;
+    background-size: contain;
+    padding: 2px 20px 2px 20px;
+
+
+}
+.social-media {
+    width: 100%;
+    height: 250px;
+    padding: 10px 15px 20px 15px;
+    border-radius: 1px;
+}
+.head-text{
+    padding: 5px 15px 5px 15px;
+}
+.main-text{
+    padding: 0px 0px 10px 0px;
+    font-size: 35px;
+    font-weight: 600;
+}
+.descript{
+    color: rgb(98, 98, 100);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.profile-1{
+    padding: 25px 0px 10px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.first-profile {
+    width: 65px;
+    padding-right: 10px;
+    }
+.label-text-1 {
+    font-size: 18px;
+    font-weight: 900;
+}
+.title-1  {
+    font-size: 18px;
+    font-weight: 200;
+}
+.article-image {
+    width: 100%;
+    height: 230px;
+    padding: 30px 15px 20px 15px;
+    border-radius: 1px;
+}
+.new-text{
+    font-size: 35px;
+    padding: 10px 0px 10px 0px;
+}
+.new-paragraph {
+    color: rgb(101, 101, 104);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+footer{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 10px;
+}
+.footer-image {
+    width: 100px;
+}
+small {
+    font-size: 16px;
+    color: rgb(117, 117, 121);
+}
+@media screen and (max-width: 768px) {
+    .menu-list {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .hamburger {
+        display: none;
+    }
+    .head-text {
+        padding: 5px 25px;
+    }
+    .main-text {
+        font-size: 30px;
+    }
+    .new-text {
+        font-size: 25px;
+    }
+    footer {
+        padding: 25px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .main-container {
+        padding: 20px 25px 25px 20px;
+    }
+    .social-media {
+        padding: 10px 25px 20px 25px;
+    }
+    .article-image {
+        width: 100%;
+        height: 230px;
+        padding: 30px 25px 20px 25px;
+        border-radius: 1px;
+    }
+    .new-list {
+        display: none;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .main-container {
+        padding: 20px 60px 20px 60px;
+    
+    }
+    .head-container {
+        padding: 20px 50px 20px 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+
+    }
+    .social-media {
+        width: 100vw;
+        height: 400px;
+    }
+    .main-text {
+        font-size: 35px;
+    }
+    .head-text {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .main-content {
+        padding: 20px 50px 20px 50px;
+        display: flex;
+        flex-direction: row;
+
+    }
+    .article-image {
+        width: 400px;
+        height: 300px;
+    }
+    .new-text{
+        font-size: 35px;
+        padding: 10px 0px 10px 0px;
+        text-wrap: wrap;
+    }
+    .new-paragraph {
+        color: rgb(101, 101, 104);
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 1.5;
+        text-wrap: wrap;
+    }
+    footer {
+        padding: 100px 60px 20px 60px;
+    }
+}

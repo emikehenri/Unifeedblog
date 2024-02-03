@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unifeed Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400&family=Open+Sans:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <nav class = "nav-container">
+            <div class="logo">
+                <img src = "../Assets/Logo.svg" alt = "sample logo">
+            </div>
+            <ul class = "menu-list">
+                <li>Home</li>
+                <li>Features</li>
+               <li>Pricing</li>
+                <li><button type = "submit" class="startbtn">Subscribe</button></li>
+            </ul>
+            <button id ="button" type = "button" class = "hamburger">
+                <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 4H0V0H24V4ZM24 8H0V12H24V8ZM24 16H0V20H24V16Z" fill="black"/>
+                    </svg>
+                    
+            </button>
+        </nav>
+        <div class = "dropdown-nav"></div>
+    </div>
+
+    <header class = "head-container">
+            <img class = "social-media" src = "../Assets/Main Article Image.png" alt = "social-media">
+            <div class = "head-text">
+                <h1 class = "main-text">Weekly Newsletter: Tweets for Higher Engagements</h1>
+                <p class = "descript">in this weekly newsletter, we will be covering ten types of engaging tweets. This is the guide if you're just starting out on Twitter.</p>
+
+                <div class = "profile-1">
+                    <img class = "first-profile" src = "../Assets/User Avatar.png" alt="first profile">
+                    <div class ="label-1">
+                        <h1 class = "label-text-1">Jessica Andrews</h1>
+                        <h2 class = "title-1">Content Manager</h2>
+                    </div>
+            </div>
+            </div>
+
+    </header>
+
+    <main class = "main-content">
+        <article class = "first-article">
+            <img class = "article-image" src = "../Assets/Article 1 Image.png" alt = "first arcticle image">
+            <div class = "head-text">
+                <h1 class="new-text">7 Tips for Organic Traffic</h1>
+                <p class="new-paragraph">From SEO to integrating with Paid Advertising, this article covers it all.</p>
+
+                <div class = "profile-1">
+                    <img class = "first-profile" src = "../Assets/User Avatar-1.png" alt="first profile">
+                    <div class ="label-1">
+                        <h1 class = "label-text-1">Spencer David</h1>
+                        <h2 class = "title-1">SEO Specialist</h2>
+                    </div>
+            </div>
+        </article>
+        <article class = "first-article">
+            <img class = "article-image" src = "../Assets/Article 2 Image.png" alt = "first arcticle image">
+            <div class = "head-text">
+                <h1 class="new-text">How To Start Your Own Business</h1>
+                <p class="new-paragraph">Starting your own business in 2021 has never been easier</p>
+
+                <div class = "profile-1">
+                    <img class = "first-profile" src = "../Assets/User Avatar-2.png" alt="first profile">
+                    <div class ="label-1">
+                        <h1 class = "label-text-1">Sara Frey</h1>
+                        <h2 class = "title-1">Business Leader</h2>
+                    </div>
+            </div>
+        </article>
+        <article class = "first-article">
+            <img class = "article-image" src = "../Assets/Article 3 Image.png" alt = "first arcticle image">
+            <div class = "head-text">
+                <h1 class="new-text">5 Tips for Better Branding</h1>
+                <p class="new-paragraph">From SEO to integrating with Paid Advertising, this article covers it all.</p>
+
+                <div class = "profile-1">
+                    <img class = "first-profile" src = "../Assets/User Avatar-3.png" alt="first profile">
+                    <div class ="label-1">
+                        <h1 class = "label-text-1">David Suns</h1>
+                        <h2 class = "title-1">Brand Manager</h2>
+                    </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <img class = "footer-image" src = "../Assets/Logo.svg" alt = "footer image">
+        <small>Unifeed &copy 2017 All Copyrights Not Reserved</small>
+    </footer>
+    <script>
+        let btn = document.querySelector('#button');
+let dropdown = document.querySelector('.dropdown-nav');
+let isToggle = false;
+
+btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (isToggle) {
+        // If the dropdown is already open, close it
+        dropdown.style.display = 'none';
+        isToggle = false;
+    } else {
+        // If the dropdown is closed, open it
+        dropdown.innerHTML = ` <ul class="new-list">
+            <li class="list">Home</li>
+            <li class="list">Features</li>
+            <li class="list">Pricing</li>
+            <li class="list btnlist">Get Started</li>
+        </ul>`;
+        dropdown.style.display = 'block';
+        isToggle = true;
+    }
+});
+</script>
+</body>
+</html>
